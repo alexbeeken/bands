@@ -17,11 +17,11 @@ end
 
 post '/update_venues' do
   band = Band.find(params.fetch("band_id").to_i)
-  venue_ids = params.fetch("venue_ids")
   venues = []
+  venue_ids = params.fetch("venue_ids")
   venue_ids.each() do |id|
-    venues.push(Venue.find(id.to_i))
-  end
+      venues.push(Venue.find(id.to_i))
+    end
   band.update_venues(venues)
   redirect '/'
 end

@@ -1,0 +1,12 @@
+body {
+  background-image: url("/img/2.png");
+  padding-left: 100px;
+}
+
+.jumbotron {
+  margin-bottom: 40px !important;
+  height: 350px !important;
+  color: Black !important;
+  text-shadow: gray 0.1em 0.3em 0.3em !important;
+  background: transparent !important;
+}

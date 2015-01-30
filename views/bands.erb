@@ -18,6 +18,8 @@
 
     <% end %>
 
+<%= "<input type='hidden' name='venues_empty' value='#{@venues_empty}'>" %>
+
 <input type='hidden' value="<%= @band.id %>" name="band_id">
 <input type='submit' value='add venues'>
 </form>
