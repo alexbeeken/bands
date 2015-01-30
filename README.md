@@ -16,6 +16,10 @@ This is an app that helps you keep tracks of which bands have performed at which
 
 ```
 
+3. Run `ruby app.rb`
+
+4. Navigate to localhost:4567 in your browser to use the app.
+
 ## Testing
 
 Simply run `rspec` inside of the project directory.
