@@ -1,0 +1,28 @@
+<h1>Venues for <%= @band.name %></h1>
+
+<h3>The venues this band has played</h3>
+
+<form action='/update_venues' method='post'>
+
+  <% @venues.each do |venue| %>
+
+      <% if @band.venues().include?(venue) %>
+
+        <%= "<input type='checkbox' name='venue_ids[]' value='#{venue.id}' checked>#{venue.name}<br>" %>
+
+      <% else %>
+
+        <%= "<input type='checkbox' name='venue_ids[]' value='#{venue.id}'>#{venue.name}<br>" %>
+
+      <% end %>
+
+    <% end %>
+
+<input type='hidden' value="<%= @band.id %>" name="band_id">
+<input type='submit' value='add venues'>
+</form>
+
+<br>
+<br>
+
+<a href="/">Go Back</a>
