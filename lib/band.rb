@@ -27,19 +27,14 @@ class Band < ActiveRecord::Base
   end
 
   define_method(:title_case) do
-
       title = self.name
-
       title = title.split()
-
       title.each() do |word|
         unless (word.include?("of")) || (word.include?("the")) && (title.first != "the")
           word.capitalize!
         end
       end
-
       title = title.join(" ")
-
       self.name = title
     end
   end

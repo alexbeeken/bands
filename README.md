@@ -1,45 +1,22 @@
-## Recipe Box
+Bands and Venues
+===============
 
-This is an app that helps you store and retrieve recipes for your dog.
+This is an app that helps you keep tracks of which bands have performed at which venues. This app was made as part of an assessment of concepts learned at Epicodus in Portland, OR.
 
 
-Installation
-------------
+## Installation
 
-To run the primary application and/or any of the included RSpec files for
-testing, run either the included Gemfile or manually
-install the following gems:
+1. Navigate to a local directory of your choice and clone the project with `git clone http://github.com/alexbeeken/hair_salon.git` (or if you have forked the project, this URL will be the url of your fork). Install bundler if you haven't already `gem install bundler` and run `bundle` inside the project directory.
 
-```ruby
-rspec
-rake
-sinatra
-sinatra-contrib
-sinatra-activerecord
-pg
+2. Run the following:
+```
+		rake db:create
+		rake:db migrate
+		rake:db:test:prepare
+
 ```
 
-If you want to run the included Gemfile, enter the following statements into
-the command line:
-```ruby
-gem install bundler
-bundle
-```
-
-Before the application can run, the user must have a version of
-a Postgres database installed on their system, and running in an active session. At the time of
-creation of this application, Postgres 9.4 was used. To create the necessary database schema, enter the following Rake statements into the command line:
-```rake
-rake db:create
-rake db:migrate
-rake db:test:prepare
-```
-
-At the time of initial creation of this application, Ruby
-version 2.2.0 was used.
-
-
-## Tests
+## Testing
 
 Simply run `rspec` inside of the project directory.
 
@@ -49,16 +26,6 @@ Simply run `rspec` inside of the project directory.
 Fork the project and then replace the url in Installation instructions with that of your own copy.
 
 If you are confused don't hesitate to email me at aeb242@gmail.com.
-
-Known Bugs
-----------
-
-None as of 2015-01-29.
-
-Author
-------
-
-Alex Beeken & Kathryn Carr
 
 ## License
 
